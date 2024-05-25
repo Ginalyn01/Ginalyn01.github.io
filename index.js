@@ -1,35 +1,9 @@
-import React from "react"
+const btnLike1 = document.getElementById("btnLike1");
+const count1 = document.getElementById("count1");
 
-export const PrintName = props => {
-  return (
-    <div>
-      <p style={{ fontWeight: props.priority ? "bold" : "normal" }}>
-        {props.name}
-      </p>
-    </div>
-  )
+function countLike1() {
+  let likeCounts = parseInt(count1.value) + 1;
+  count1.textContent = likeCounts.toString();
 }
 
-export const ShowUser = props => {
-  return <PrintName name="Ned" />
-}
-
-let username = "Cersei"
-export const ShowStoredUser = props => {
-  return <PrintName name={username} priority />
-}
-
-import { useState } from "react"
-
-export const CounterExample = () => {
-  const [count, setCount] = useState(0)
-
-  const handleClick = () => setCount(count + 1)
-
-  return (
-    <div>
-      <p>You clicked {count} times</p>
-      <button onClick={handleClick}>Click me</button>
-    </div>
-  )
-}
+btnLike1.addEventListener("click", countLike1);
