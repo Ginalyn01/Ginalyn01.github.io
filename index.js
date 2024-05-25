@@ -6,3 +6,12 @@ function countLike1() {
   count1.textContent = likeCounts.toString()
 }
 btnLike1.addEventListener("click", countLike1);
+
+const btnLike1 = document.getElementById("btnLike2")
+const count1 = document.getElementById("count2")
+
+function countLike2() {
+  let likeCounts = parseInt(count2.value) + 1
+  count2.textContent = likeCounts.toString()
+}
+btnLike2.addEventListener("click", countLike2);
