@@ -14,3 +14,8 @@ function countLike2() {
   count2.textContent = likeCounts.toString()
 }
 btnLike2.addEventListener("click", countLike2)
+
+const submit=document.getElementById("submit")
+const comment=document.GetElementById("comment")
+const commentbox=document.GetElementById("commentbox")
+
