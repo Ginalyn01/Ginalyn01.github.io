@@ -10,11 +10,11 @@ btnLike1.addEventListener("click", countLike1)
 const btnDislike1 = document.getElementById("btnDislike1")
 const count1 = document.getElementById("count1")
 
-function countLike1() {
+function countDislike1() {
   let DislikeCounts = parseInt(count1.value) + 1
   count1.textContent = DislikeCounts.toString()
 }
-btnDislike1.addEventListener("click", countDisike1)
+btnDislike1.addEventListener("click", countDislike1)
 
 const btnLike2 = document.getElementById("btnLike2")
 const count2 = document.getElementById("count2")
