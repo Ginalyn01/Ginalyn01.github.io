@@ -18,4 +18,8 @@ btnLike2.addEventListener("click", countLike2)
 const submit=document.getElementById("submit")
 const comment=document.GetElementById("comment")
 const commentbox=document.GetElementById("commentbox")
+function submitComment(){
+  commentbox.textContent += comment.value.toString()+ "\n"
+}
+submit.addEventListener("click",submitComment)
 
